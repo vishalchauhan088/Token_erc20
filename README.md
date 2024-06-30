@@ -3,6 +3,21 @@
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
+# ERC20 Token and Git Remote Guide
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ERC20 Token Functionality
+
+ERC20 tokens are a standard for creating and managing tokens on the Ethereum blockchain. Here are some key functionalities provided by an ERC20 token:
+
+
+
+The `transfer` function allows token holders to send tokens to another address.
+
+```solidity
+function transfer(address recipient, uint256 amount) public returns (bool);
+function transferFrom(address sender, address recipient, uint256 amount) public returns (bool);
+function approve(address spender, uint256 amount) public returns (bool);
+function allowance(address owner, address spender) public view returns (uint256);
+function mint(address to, uint256 amount) public;
+function burn(uint256 amount) public;
+
